@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"href="styles.css">
+<title>Technical Documentation Page</title></head>
+<body class="body">
+
+      <nav id="navbar">
+        <header>Python Programming language</header><hr>
+        <a class="nav-link"href="#Introduction">Introduction</a><br>
+        <a class="nav-link"href="#Python_Data_Types">Python Data Types</a><br>
+        <a class="nav-link"href="#Python_Condition">Python Condition </a><br>
+        <a class="nav-link"href="#Python_Loops">Python Loops</a><br>
+        <a class="nav-link"href="#Python_Function">Python Function</a><br>
+        
+         </nav>
+        <main id="main-doc">
+
+        <section class="main-section" id="Introduction">
+<header>Introduction</header>
+<p>
+      Python is a popular programming language.<i>It was created by Guido Van Rossum,released in 1991</i>
+<li>Python can be used on server to create web application.</li>
+<li>python can connect to database system.It can be read and modify files.</li>
+<li>Python can be used to handle big data and perform complex mathematics.</li>
+</p>
+<p>Syntax</p>
+<code>
+        #This is Input
+        print("Hello, World"!)
+        #This is Output
+        Hello,World!
+        </code>
+</section>
+
+        <section class="main-section" id="Python_Data_Types">
+<header>Python Data Types</header>
+        <p>python data type are used to initilzethe variables that can store data in different types. </p>
+<p>Python default  build-in datatypes. </p>
+<p>You can get the datatype of any object by using type()function.</p>
+<code>
+        #Input
+       x=5
+        print(type(x))
+        #output
+    x is a 'int'
+                </code>
+<p>Number in python</p>
+<code>
+        x=1  #int
+        y=2.5 #float
+        z=1j  #complex
+</code>
+
+<p> Assign Strings to a python variable</p>
+
+<code>
+ a="Hello"
+ print(a)   #input
+
+ Hello  #output
+ </code>
+
+ <p>Slicing String</p>
+
+ <code>
+a="Hello,World!"
+print(a[2:5])   #input
+
+llo     #output
+</code>
+<p>String Concatenation</p>
+<code>
+        x="Hello"
+        y="World"
+        z=x+y;
+        print(z)        #input
+        HelloWorld      #output
+        </code>
+
+ </section>
+
+ <section class="main-section" id="Python_Condition">
+         <header>Python Condition</header>
+        <p>python support usual logical condition
+                <li>Equal:a==b</li>
+                <li>Not Equal:a!=b</li>
+<p>Elif keyword is "if the previous conditions were not true, then try this condition"</p>
+<code>
+        # input  
+   a=5
+   b=5
+   if a > b:
+     print("b is greater than a")
+   elif a==b:
+      print("a and b are equal")     
+
+       #output
+
+  a and b are equal 
+           </code>
+        </p>
+<p>Else "else keyword catches anything which isn't caught by the preceding conditions"</p>
+<code>
+        #input
+ a=5
+ b=25
+  if b > a:
+    print(b is greater than a );
+  elif a==b:
+     print(a is equal to b);
+  else:
+    print(a is greater than b) 
+
+    #output
+a is greater than b
+</code>
+     </section>
+
+      <section class="main-section" id="Python_Loops">
+              <header> Python Loops</header>
+      <li>while loop</li>
+      <li>for loop</li>
+      <p>while loop we can execute a set of statements as long as a condition is true</p>
+<code>
+        #input
+i=1
+while i < 6:
+  print(i)
+  i+=1
+  #output
+  1
+  2
+  3
+  4
+  5
+ </code>
+<p> break statement we can stop the loop even if the while condition is true</p>
+<code>
+        #input
+i=1
+while i < 6:
+  print(i)
+  if(i==3)
+  break
+  i+=1
+
+  #output
+  1
+  2
+  3
+  </code>
+  <p>A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string)
+  <li>This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.
+
+With the for loop we can execute a set of statements, once for each item in a list</li> tuple, set etc</p>
+<code>
+        Print each name in the list:
+        names=["saran","mathew","modi"]
+        for i in names:
+          print(i)
+
+          #output
+          saran
+          mathew
+          modi
+          </code>
+       </section>
+        
+        <section class="main-section" id="Python_Function">
+                <header> Python Function</header>
+                <p>A function is a block of code which only runs when it is called.You can pass data, known as parameters, into a function can return data as a result</p>
+                <li>create a function</li>
+                <code>
+                        created using def keyword
+                        def my_function():
+                           print("Hello from a function")
+                           my_function() #calling a function
+
+                           #output
+                           Hello from a function
+                           </code>
+                           <li>Passing a list as a argument</li>
+                           <p>You can send any data types of argument to a function (string, number, list, dictionary etc.), and it will be treated as the same data type inside the function.
+
+E.g. if you send a List as an argument, it will still be a List when it reaches the function</p>
+<code>
+def my_function(food):
+   for i in food:
+      print(i)
+
+      fruits=["apple","orange","mango"]
+my_function(fruits)
+
+#output
+
+apple
+orange
+mango
+        </code>
+                <li>range()function using for loop</li>
+                <p>To loop through a set of code a specified number of times, we can use the range() function,
+The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.</p>
+<code>
+for i in range(6):
+  print(i)
+
+  # output
+  0
+  1
+  2
+  3
+  4
+  5
+</code>
+</main>
+
+
+</body>
+</html>
+
